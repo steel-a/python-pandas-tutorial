@@ -3,6 +3,7 @@ print('Len:',len(n1)) # 7
 print('Count:',n1.count('a')) # 2
 print('Count:',n1.count('a',3,10)) # 1
 print('Find:',n1.find("ria")) # 2
+print('RFind:',n1.rfind("DB")) # 5
 print('Find:',n1.find("Paul")) # -1
 
 print('In:','ria' in n1) # True

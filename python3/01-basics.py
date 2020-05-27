@@ -10,7 +10,10 @@ name = 'Maria' #input('Whats your name? ')
 age = 23
 weight = 62.5
 print(name,'is',age,'years old and weighs',weight,'kilos')
+# Python 3:
 print('{} is {} years old and weighs {} kilos'.format(name, age, weight))
+# Python 3.6+
+print(f'{name} is {age} years old and weighs {weight} kilos')
 
 
 num1 = '3' #input('Whats the first number? ')

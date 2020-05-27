@@ -6,6 +6,8 @@ n3 = "Paul"
 n4 = "Luke"
 
 # Create a list
+listnames = list() # or
+listnames = [] # or
 listNames = [n1, n2, n3, n4]
 print(listNames, 'Last element:', listNames[-1])
 
@@ -46,6 +48,11 @@ listNamesLink = listNames
 
 # Copy a list
 listNamesCopy = listNames[:]
+
+# Clear a list
+listNames.clear()
+
+print(listNames, listNamesLink, listNamesCopy)
 
 # List can be int or any type
 listNumbers = list(range(1,4)) # equals to = [1, 2, 3]

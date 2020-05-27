@@ -1,0 +1,3 @@
+pandas
+openpyxl # for read excel
+xlrd # for manipulate excel files

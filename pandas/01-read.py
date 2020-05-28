@@ -3,12 +3,15 @@ import pandas as pd
 ##########################
 ####     CSV File     ####
 ##########################
-path = '~/apps/python-pandas-tutorial/pandas/00-biostats.csv'
+path = './pandas/00-biostats.csv'
 # Could be an url
 #path = 'https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv'
 
 # Just open
 df = pd.read_csv(path)
+######   Replace column names if necessary   ######
+df.columns = ['Name','Sex','Age','Height','Weight']
+
 
 ####  More options to know  ####
 
@@ -21,13 +24,14 @@ df = pd.read_csv(path)
 # Tell how many cols we will use
 # df = pd.read_csv(path, nrows=10)
 
-
+print(df.columns)
+print(df.head())
 
 ##########################
 ####    Excel File    ####
 ##########################
 
-path = '~/apps/python-pandas-tutorial/pandas/00-biostats.xlsx'
+path = './pandas/00-biostats.xlsx'
 
 ####### Open an Excel file so you can read any sheet #######
 # How to see exel sheets
@@ -42,4 +46,4 @@ df = pd.read_excel(path)
 # Tell what sheet we will use
 #df = pd.read_excel(path, sheet_name='Sheet1') # or sheet_name=0
 
-print(df)
+print(df.head())
